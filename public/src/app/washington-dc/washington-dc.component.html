@@ -1,0 +1,11 @@
+<div>
+    <img src="https://images.pexels.com/photos/2446915/pexels-photo-2446915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+    <ul *ngIf='weather_dc.main'>
+        <li>Humidity: {{weather_dc.main.humidity}}</li>
+        <li>Average Temperature: {{weather_dc.main.temp}}</li>
+        <li>High Temperature: {{weather_dc.main.temp_max}}</li>
+        <li>Low Temperature: {{weather_dc.main.temp_min}}</li>
+        <li>Status: {{weather_dc.weather[0].description}}</li>
+    </ul>
+</div>

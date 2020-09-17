@@ -1,0 +1,12 @@
+
+<div>
+    <img src="https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" >
+
+    <ul *ngIf='weather_dallas.main'>
+        <li>Humidity: {{weather_dallas.main.humidity}}</li>
+        <li>Average Temperature: {{weather_dallas.main.temp}}</li>
+        <li>High Temperature: {{weather_dallas.main.temp_max}}</li>
+        <li>Low Temperature: {{weather_dallas.main.temp_min}}</li>
+        <li>Status: {{weather_dallas.weather[0].description}}</li>
+    </ul>
+</div>

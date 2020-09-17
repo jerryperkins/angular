@@ -1,0 +1,11 @@
+<div>
+    <img src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+    <ul *ngIf='weather_san_jose.main'>
+        <li>Humidity: {{weather_san_jose.main.humidity}}</li>
+        <li>Average Temperature: {{weather_san_jose.main.temp}}</li>
+        <li>High Temperature: {{weather_san_jose.main.temp_max}}</li>
+        <li>Low Temperature: {{weather_san_jose.main.temp_min}}</li>
+        <li>Status: {{weather_san_jose.weather[0].description}}</li>
+    </ul>
+</div>

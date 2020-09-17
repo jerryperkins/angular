@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="header">
+    <h1>Dojo Weather Forecast</h1>
+    <ul>
+      <li><a [routerLink]="['/seattle']">Seattle, WA</a></li>|
+      <li><a href="" [routerLink]="['/san_jose']">San Jose, CA</a></li>|
+      <li><a href="" [routerLink]="['/burbank']">Burbank, CA</a></li>|
+      <li><a href="" [routerLink]="['/washington_dc']">Washington, DC</a></li>|
+      <li><a href="" [routerLink]="['/chicago']">Chicago, IL</a></li>|
+      <li><a href="" [routerLink]="['/']">Dallas, TX</a></li>
+    </ul>
+  </div>
+  
+</div>
+
+
+
+
+<!-- <h1>Lets get some weather</h1>
+
+<h2><img style="height: 200px;" width="200px" src="https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></h2>
+<h2>Here is the dallas weather: {{weather_dallas.main.temp}}</h2> -->
+
+<router-outlet></router-outlet>

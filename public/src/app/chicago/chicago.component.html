@@ -1,0 +1,11 @@
+<div>
+    <img src="https://images.pexels.com/photos/1569012/pexels-photo-1569012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+    <ul *ngIf='weather_chicago.main'>
+        <li>Humidity: {{weather_chicago.main.humidity}}</li>
+        <li>Average Temperature: {{weather_chicago.main.temp}}</li>
+        <li>High Temperature: {{weather_chicago.main.temp_max}}</li>
+        <li>Low Temperature: {{weather_chicago.main.temp_min}}</li>
+        <li>Status: {{weather_chicago.weather[0].description}}</li>
+    </ul>
+</div>

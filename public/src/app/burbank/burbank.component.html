@@ -1,0 +1,16 @@
+<div>
+    <div class="title">
+        <h1>Burbank CA</h1>
+    </div>
+    <div class="inner">
+        <img src="https://images.pexels.com/photos/2695679/pexels-photo-2695679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+        <ul *ngIf='weather_burbank.main'>
+            <li>Humidity: {{weather_burbank.main.humidity}}</li>
+            <li>Average Temperature: {{weather_burbank.main.temp}}</li>
+            <li>High Temperature: {{weather_burbank.main.temp_max}}</li>
+            <li>Low Temperature: {{weather_burbank.main.temp_min}}</li>
+            <li>Status: {{weather_burbank.weather[0].description}}</li>
+        </ul>
+    </div>
+</div>
